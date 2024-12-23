@@ -7,7 +7,6 @@ pipeline {
         stage('SCM') {
             steps {
                 git url : 'https://github.com/vinodjld/simple-java-maven-app.git'
-                    branch : 'master'
             }
         }
         stage('Build') {
